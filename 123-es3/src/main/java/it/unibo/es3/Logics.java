@@ -8,6 +8,12 @@ public interface Logics {
 
     List<Integer> random();
 
-    void advance();
-    
+    void advance(Pair<Integer, Integer> pos);
+
+    List<Pair<Integer, Integer>> activeButtons();
+
+    List<Pair<Integer, Integer>> adjacent(Pair<Integer, Integer> pos);
+
+    int toQuit();
+
 }
